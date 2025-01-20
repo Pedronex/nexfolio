@@ -15,10 +15,6 @@ export default function Home() {
           Atuo na área de análise e desenvolvimento de sistemas desde 2020, com
           experiência em criação de APIs, aplicativos, sites e containers.
           <br />
-          Trabalhei em empresas de relevância estadual, como a Organização das
-          Voluntárias de Goiás (OVG). Sou formado em análise e desenvolvimento
-          de sistemas pela PUC.
-          <br />
           Estou em busca de novos desafios e oportunidades para crescer
           profissionalmente será que você tem um pra mim?
         </p>

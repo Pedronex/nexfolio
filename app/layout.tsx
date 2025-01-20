@@ -31,7 +31,7 @@ export default function RootLayout({
   footer: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen w-screen antialiased scroll-smooth`}
       >

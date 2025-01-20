@@ -214,8 +214,10 @@ export default function About() {
           </CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col flex-wrap gap-3 justify-around">
-          <li>Português (Nativo)</li>
-          <li>Inglês (Intermediário)</li>
+          <ul className="flex flex-col flex-wrap gap-3">
+            <li>Português (Nativo)</li>
+            <li>Inglês (Intermediário)</li>
+          </ul>
         </CardContent>
       </Card>
     </main>
