@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen w-screen antialiased scroll-smooth`}
       >
         <ThemeProvider
           attribute="class"

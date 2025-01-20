@@ -12,25 +12,25 @@ type Props = {
 export function Logo({ width, height, className }: Props) {
   const { theme, systemTheme } = useTheme();
 
+  if (theme === "dark" || (systemTheme === "dark" && theme === "system")) {
+    return (
+      <Image
+        src="/icon-dark.svg"
+        alt="Logo"
+        width={width || 50}
+        height={height || 50}
+        className={className}
+      />
+    );
+  }
+
   return (
-    <>
-      {theme === "dark" || (systemTheme === "dark" && theme === "system") ? (
-        <Image
-          src="/icon-dark.svg"
-          alt="Logo"
-          width={width || 50}
-          height={height || 50}
-          className={className}
-        />
-      ) : (
-        <Image
-          src="/icon-light.svg"
-          alt="Logo"
-          width={width || 50}
-          height={height || 50}
-          className={className}
-        />
-      )}
-    </>
+    <Image
+      src="/icon-light.svg"
+      alt="Logo"
+      width={width || 50}
+      height={height || 50}
+      className={className}
+    />
   );
 }

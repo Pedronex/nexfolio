@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer id="contact" className="bg-muted text-muted-foreground">
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+      <div className="max-w-6xl mx-auto px-4 md:px-8 py-12 md:py-16">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-16">
           {/* Informações principais */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold text-foreground mb-2">
@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
 
           {/* Links de navegação */}
-          <div className="flex flex-col items-center md:items-start gap-2">
+          <div className="flex flex-col items-center md:items-start gap-2 md:gap-4">
 
             <Link
               href="#home"
@@ -39,11 +39,12 @@ export default function Footer() {
           </div>
 
           {/* Redes sociais e contato */}
-          <div className="flex flex-col items-center md:items-end gap-4">
+          <div className="flex flex-col items-center md:items-end gap-4 md:gap-8">
             <div className="flex gap-4 justify-between">
-              <a
+              <Link
                 href="https://github.com/pedronex"
                 className="hover:text-foreground transition-colors"
+                aria-label="GitHub de Pedro Soares"
               >
                 <Image
                   src={"/github.svg"}
@@ -52,9 +53,10 @@ export default function Footer() {
                   height={24}
                   className="dark:invert"
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://linkedin.com/in/pedronex"
+                aria-label="LinkedIn de Pedro Soares"
                 className="hover:text-foreground transition-colors"
               >
                 <Image
@@ -64,13 +66,14 @@ export default function Footer() {
                   height={24}
                   className="dark:invert"
                 />
-              </a>
-              <a
+              </Link>
+              <Link
+                aria-label="Email para contato"
                 href="mailto:pedrosoares.nex@gmail.com"
                 className="hover:text-foreground transition-colors"
               >
                 <AtSign size={24} />
-              </a>
+              </Link>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <MapPin size={16} />
@@ -82,7 +85,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-muted-foreground">
           <p>
-            © {new Date().getFullYear()} Pedro Soares Silva. Todos os direitos
+            &copy; {new Date().getFullYear()} Pedro Soares Silva. Todos os direitos
             reservados.
           </p>
         </div>

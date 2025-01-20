@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -12,7 +10,7 @@ import { Logo } from "./Logo";
 
 export function Navbar() {
   return (
-    <nav className="w-full flex items-center bg-background justify-between p-2 border-b fixed z-50 top-0 left-0">
+    <nav className="w-full flex items-center bg-background justify-between p-2 border-b static z-50 top-0 left-0">
       <div className="flex items-center gap-2">
         <div className="flex aspect-square bg-primary dark:bg-primary-foreground p-1 size-12 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
           <Logo />
@@ -25,25 +23,28 @@ export function Navbar() {
       <NavigationMenu className="gap-3 justify-between w-screen h-fit hidden lg:flex">
         <NavigationMenuList className="gap-3">
           <NavigationMenuItem>
-            <Link href="#home">
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Inicio
-              </NavigationMenuLink>
-            </Link>
+            <NavigationMenuLink
+              href="#home"
+              className={navigationMenuTriggerStyle()}
+            >
+              Inicio
+            </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="#about">
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Sobre
-              </NavigationMenuLink>
-            </Link>
+            <NavigationMenuLink
+              href="#about"
+              className={navigationMenuTriggerStyle()}
+            >
+              Sobre
+            </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="#contact">
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Contato
-              </NavigationMenuLink>
-            </Link>
+            <NavigationMenuLink
+              href="#contact"
+              className={navigationMenuTriggerStyle()}
+            >
+              Contato
+            </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
