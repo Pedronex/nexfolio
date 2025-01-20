@@ -10,7 +10,7 @@ import { Logo } from "./Logo";
 
 export function Navbar() {
   return (
-    <nav className="w-screen flex items-center bg-background justify-between p-2 border-b static z-50 top-0 left-0">
+    <nav className="w-full flex items-center bg-background justify-between p-2 border-b static z-50 top-0 left-0">
       <div className="flex items-center gap-2">
         <div className="flex aspect-square bg-primary dark:bg-primary-foreground p-1 size-12 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
           <Logo />
