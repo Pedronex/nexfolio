@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -45,6 +46,7 @@ export default function RootLayout({
           {about}
           {footer}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
