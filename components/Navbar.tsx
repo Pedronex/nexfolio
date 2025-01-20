@@ -17,7 +17,7 @@ export function Navbar() {
         </div>
         <div className="grid flex-1 text-left text-sm leading-tight">
           <span className="truncate font-semibold">Pedro Soares</span>
-          <span className="truncate text-xs">Fullstack Developer</span>
+          <span className="truncate text-xs">Full Stack Developer</span>
         </div>
       </div>
       <NavigationMenu className="gap-3 justify-between w-screen h-fit hidden lg:flex">
