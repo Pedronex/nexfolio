@@ -16,7 +16,7 @@ export default function Home() {
             <h1 className="truncate font-semibold text-2xl">Pedro Soares</h1>
             <h2 className="truncate text-lg">Desenvolvedor Full Stack (Site, Aplicativo, Servidor, etc)</h2>
           
-        <p className="text-lg text-muted-foreground text-justify">
+        <p className="text-lg text-muted-foreground text-justify max-sm:hidden">
           Atuo na área de análise e desenvolvimento de sistemas desde 2020, com
           experiência em criação de APIs, aplicativos, sites e containers.
           <br />
