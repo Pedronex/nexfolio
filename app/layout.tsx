@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import localFont from "next/font/local";
 import "./globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navbar } from "@/components/Navbar";
 
@@ -23,13 +23,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  home,
-  about,
-  footer,
+  children,
 }: Readonly<{
-  about: React.ReactNode;
-  home: React.ReactNode;
-  footer: React.ReactNode;
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="pt-BR">
@@ -43,11 +39,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          {home}
-          {about}
-          {footer}
+          {children}
         </ThemeProvider>
-        <SpeedInsights/>
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>

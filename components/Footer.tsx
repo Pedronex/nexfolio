@@ -2,7 +2,7 @@ import { AtSign, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer id="contact" className="bg-muted text-muted-foreground">
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-12 md:py-16">
@@ -17,7 +17,6 @@ export default function Footer() {
 
           {/* Links de navegação */}
           <div className="flex flex-col items-center md:items-start gap-2 md:gap-4">
-
             <Link
               href="#home"
               className="hover:text-foreground transition-colors"
@@ -85,8 +84,8 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Pedro Soares Silva. Todos os direitos
-            reservados.
+            &copy; {new Date().getFullYear()} Pedro Soares Silva. Todos os
+            direitos reservados.
           </p>
         </div>
       </div>

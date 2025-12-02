@@ -2,7 +2,7 @@ import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export default function Home() {
+export function Home() {
   return (
     <main
       id="home"
@@ -12,10 +12,11 @@ export default function Home() {
         <Logo width={150} height={150} className="w-full h-full" />
       </div>
       <section className="flex flex-col w-3/4 max-sm:w-full p-2">
-        
-            <h1 className="truncate font-semibold text-2xl">Pedro Soares</h1>
-            <h2 className="truncate text-lg">Desenvolvedor Full Stack (Site, Aplicativo, Servidor, etc)</h2>
-          
+        <h1 className="truncate font-semibold text-2xl">Pedro Soares</h1>
+        <h2 className="truncate text-lg">
+          Desenvolvedor Full Stack (Site, Aplicativo, Servidor, etc)
+        </h2>
+
         <p className="text-lg text-muted-foreground text-justify max-sm:hidden">
           Atuo na área de análise e desenvolvimento de sistemas desde 2020, com
           experiência em criação de APIs, aplicativos, sites e containers.
